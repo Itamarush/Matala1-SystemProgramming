@@ -44,13 +44,13 @@ recursived: libclassrec.so
 loopd: libclassloops.so
 
 mains: main.o libclassrec.a
-	gcc -Wall -g main.o libclassrec.a -o mains
+	gcc -Wall -g main.c libclassrec.a -o mains
 
 maindloop: main.o libclassloops.so
-	gcc -Wall -o main.o ./libclassloops.so -o maindloop
+	gcc -Wall -g main.c ./libclassloops.so -o maindloop
 	
 maindrec: main.o libclassrec.so
-	gcc -Wall -o main.o ./libclassrec.so -o maindrec
+	gcc -Wall -g main.c ./libclassrec.so -o maindrec
 
 all: main.o mains maindrec maindloop loops
 
