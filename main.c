@@ -13,7 +13,8 @@ int main()
 
     if (num1>=0 && num2>=0)
     {
-            printf("\nThe Armstrong numbers are:");
+            printf("\n");
+            printf("The Armstrong numbers are:");
             for (i = num1; i <= num2; i++)
             {
                 if(isArmstrong(i) == 1)
@@ -22,7 +23,8 @@ int main()
                 }
             }
 
-            printf("\nThe Palindromes are:");
+            printf("\n");
+            printf("The Palindromes are:");
             for (i = num1; i <= num2; i++)
             {
                     if(isPalindrome(i) == 1)
@@ -31,7 +33,8 @@ int main()
                 }
             }
 
-            printf("\nThe Prime numbers are:");
+            printf("\n");
+            printf("The Prime numbers are:");
             for (i = num1; i <= num2; i++)
             {
                  if(isPrime(i) == 1)
@@ -40,7 +43,8 @@ int main()
                 }
             }
 
-            printf("\nThe Strong numbers are:");
+            printf("\n");
+            printf("The Strong numbers are:");
             for (i = num1; i <= num2; i++)
             {
                  if(isStrong(i) == 1)
@@ -48,7 +52,6 @@ int main()
                     printf(" %d", i);
                 }
             }
-            printf("\n");
     }
      
 }
