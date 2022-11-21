@@ -54,7 +54,9 @@ maindrec: main.o libclassrec.so
 
 all: main.o mains maindrec maindloop loops
 
+.PHONY: clean all
+
 clean: 
-	rm maindrec mains maindloop *o *so *a *gch *out
+	rm -f maindrec mains maindloop *o *so *a *gch *out
 
 	
