@@ -22,7 +22,7 @@ int main()
                 }
             }
 
-            printf("\nThe Palindrome numbers are: ");
+            printf("\nThe Palindromes numbers are: ");
             for (i = num1; i <= num2; i++)
             {
                     if(isPalindrome(i) == 1)
